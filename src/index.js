@@ -7,6 +7,7 @@ import ErrorPage from "./error-page";
 import "antd/dist/antd.css";
 import Root from "./routes/root";
 import Form from "./routes/form";
+import DataSent from "./routes/dataSent";
 // import { Provider } from "react-redux";
 
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "form",
     element: <Form />,
+  },
+  {
+    path: "data-sent",
+    element: <DataSent />,
   },
 ]);
 

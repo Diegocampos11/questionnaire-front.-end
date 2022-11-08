@@ -32,7 +32,7 @@ export default function Formx() {
     getQuestions().then((data) => {
       data = data.map((question) => {
         return Object.assign(
-          { question_type: "radio", values: ["radio", "nope"] },
+          { question_type: "radio", values: ["option 1", "option 2"] },
           question
         );
       });
